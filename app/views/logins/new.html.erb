@@ -1,5 +1,26 @@
-<h1>New Login</h1>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
 
-<%= render 'form', login: @login %>
+<body style="min-height: 700px;">
+	<div id="banner">
+	  <div id="banner-content">
+	    <div id="logo">
+	      <%= image_tag "logo.png", size: "100x100" %>    
+	    </div>
+	  </div>
+	</div>
 
-<%= link_to 'Back', logins_path %>
+
+<div class="container" align="center">
+	<div class="jumbotron" id="jumbotronLogin">
+		<h1 style="font-size: 35px; font-family: Lato, sans-serif; ">Create your Account!</h1>
+		<div style="padding-top: 3em; padding-bottom: 3em;">
+			<div style="font-size: 15px;">
+				<%= render 'form', login: @login %>
+				<%= link_to 'Back', logins_path %>
+			</div>
+		</div>
+	</div>
+</div>
+</body>

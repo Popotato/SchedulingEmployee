@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<!-- saved from url=(0055)file:///C:/Users/sleiman/Desktop/Bootstrap/login.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/x-icon" href="favicon.png">
@@ -46,11 +44,12 @@
           <input type="password" class="form-control" id="pwd">
         </div>
         <div id="signIn_button"></br>
-          <button type="button" class="btn btn-xl" id="button">SIGN IN</button>
+          <button type="button" class="btn btn-xl" id="button">Sign In</button>
         </div>
       </div>
-      <div>
-        <a href="fillForm.html" class="url">Create an account!</a></div></br>
+      <div class="url" style="margin-bottom: 1.5em;">
+        <%= link_to 'Create an account', new_login_path %>
+      </div>
         <a href="forgotPassword.html" class="url">Forgot your password?</a> 
       </div>     
     </div>
