@@ -2,7 +2,7 @@
 
 <p>
   <strong>Employee:</strong>
-  <%= @availability.employee %>
+  <%= link_to @availability.employee.firstname + " " + @availability.employee.lastname, @availability.employee %>
 </p>
 
 <p>

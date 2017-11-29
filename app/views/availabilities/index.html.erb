@@ -15,12 +15,12 @@
   <tbody>
     <% @availabilities.each do |availability| %>
       <tr>
-        <td><%= availability.employee %></td>
+        <td><%= link_to availability.employee.firstname + " " + availability.employee.lastname, availability.employee %></td>
         <td><%= availability.starttime %></td>
         <td><%= availability.endtime %></td>
-        <td><%= link_to 'Show', availability %></td>
+        <td><%= link_to 'View', availability %></td>
         <td><%= link_to 'Edit', edit_availability_path(availability) %></td>
-        <td><%= link_to 'Destroy', availability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', availability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

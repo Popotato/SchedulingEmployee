@@ -1,4 +1,35 @@
 // Place all the styles related to the Employees controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1{
+	text-align: center;
+}
 
+#search {
+	margin-left: 35%;
+	margin-bottom: 5px;
+}
+
+.rows{
+	padding: 8px;
+	text-align: center;
+}
+
+.employeetable {
+	border-collapse: collapse;
+	margin-top: 10em;
+}
+
+.employeetable, th, td {
+	border: 1px solid black;
+}
+
+#banner { 
+    background-color: rgb(236, 27, 46); 
+    width: 100%;
+}
+
+#banner-content { 
+    width: 100%; 
+    margin: 0 auto; 
+}

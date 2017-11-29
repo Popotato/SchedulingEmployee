@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///C:/Users/sleiman/Desktop/Bootstrap/login.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+  <script src="script.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <title>Login</title>
+
+    <link href="./bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./bootstrap_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href="./bootstrap_files/navbar-fixed-top.css" rel="stylesheet">
+
+    <script src="./bootstrap_files/ie-emulation-modes-warning.js"></script>
+
+    <link href="login_styles.scss" rel="stylesheet">
+  </head>
+
+  <body style="min-height: 700px;">
+
+    <div id="banner">
+      <div id="banner-content">
+        <div id="logo">
+          <%= image_tag "logo.png", size: "100x100" %>    
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="jumbotron" id="jumbotronLogin">
+          <h1 id="login">Login</h1>
+        <div class="form-group" id="div_usr">
+          <label for="usr">Username</label>
+          <input type="text" class="form-control" id="usr">
+        </div></br>
+        <div class="form-group" id="div_pwd">
+          <label for="pwd">Password</label>
+          <input type="password" class="form-control" id="pwd">
+        </div>
+        <div id="signIn_button"></br>
+          <button type="button" class="btn btn-xl" id="button">SIGN IN</button>
+        </div>
+      </div>
+      <div>
+        <a href="fillForm.html" class="url">Create an account!</a></div></br>
+        <a href="forgotPassword.html" class="url">Forgot your password?</a> 
+      </div>     
+    </div>
+  </body>
+</html>
