@@ -10,12 +10,14 @@
       </ul>
     </div>
   <% end %>
-
+<div class="container">
+<form>
+<div class="form-group">
   <div class="field">
     <%= form.label :firstname %>
     <%= form.text_field :firstname, id: :employee_firstname %>
   </div>
-
+</div>
   <div class="field">
     <%= form.label :lastname %>
     <%= form.text_field :lastname, id: :employee_lastname %>
@@ -59,4 +61,6 @@
   <div class="actions">
     <%= form.submit %>
   </div>
+  </form>
+</div>
 <% end %>
