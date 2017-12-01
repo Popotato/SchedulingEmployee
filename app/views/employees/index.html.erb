@@ -3,10 +3,22 @@
   <div id="banner-content">
     <div id="logo">
       <%= image_tag "logo.png", size: "100x100" %>    
+      <div id="signed_in">
+          <% if signed_in? %>
+            <div style="color: white; font-size: 17px; margin-bottom: 10px;" >
+                You are signed in as: <%= current_user.email %>
+              </div>
+              <div style="text-align: right;">
+                <%= button_to 'Sign out', sign_out_path, method: :delete %>
+              </div>
+          <% else %>
+              <%= link_to 'Sign in', sign_in_path %>
+          <% end %>   
+       </div>
     </div>
   </div>
 </div>
-<h1 style="padding-top: 3em;">Employees</h1>
+<h1>Employees</h1>
 
 <div id="search">
 <%= form_tag employees_path, :method => 'get' do %>
@@ -26,7 +38,7 @@
       <th class="rows">City</th>
       <th class="rows">Postal Code</th>
       <th class="rows">Phone Number</th>
-      <th colspan="3" class="rows">Buttons</th>
+      <th colspan="3" class="rows">Actions</th>
     </tr>
   </thead>
 

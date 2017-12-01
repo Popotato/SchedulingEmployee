@@ -8,9 +8,9 @@
   </div>
 </header>
 
-<p id="notice"><%= notice %></p>
+<p id="notice" align="center"><%= notice %></p>
 
-<table>
+<table align="center">
 	<thead>
 		<tr>
 			<td>
@@ -39,6 +39,7 @@
 		</tr>
 	</thead>
 </table>
-
-<%= link_to 'Edit', edit_availability_path(@availability) %> |
-<%= link_to 'Back', availabilities_path %>
+<div id="edit_back">
+	<%= link_to 'Edit', edit_availability_path(@availability), :style => 'color: white;' %> |
+	<%= link_to 'Back', availabilities_path, :style => 'color: white;' %>
+</div>

@@ -38,23 +38,62 @@ h1{
 
 #newemployee {
     background-color: rgb(236, 27, 46);
-    color: white;
     border-radius: 38px;
     margin-left: 69%;
     padding: 2px 38px;
-    font-color: white;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#edit_back{
+    background-color: rgb(236, 27, 46);
+    border-radius: 38px;
+    margin-left: 44%;
+    padding: 2px 38px;
+    margin-top: 15px;
     display: inline-block;
     text-decoration: none;
 }
 
 #availabilitybutton {
     background-color: rgb(236, 27, 46);
-    color: white;
     border-radius: 38px;
     margin-left: 70%;
     padding: 2px 38px;
     margin-top: 10px;
-    font-color: white;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#new_employee{
+    background-color: rgb(236, 27, 46);
+    border-radius: 38px;
+    margin-left: 43.5%;.
+    margin-bottom: 3em;
+    padding: 2px 38px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#view_employee{
+    background-color: rgb(236, 27, 46);
+    border-radius: 38px;
+    margin-left: 41.3%;
+    padding: 2px 38px;
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+#new_availability{
+    background-color: rgb(236, 27, 46);
+    border-radius: 38px;
+    margin-left: 41.5%;
+    margin-bottom: 3em;
+    padding: 2px 38px;
+    margin-top: 15px;
     display: inline-block;
     text-decoration: none;
 }
@@ -63,3 +102,7 @@ h1{
 	text-align: right;
 }
 
+#signed_in{
+    float: right;
+    position: relative;
+}

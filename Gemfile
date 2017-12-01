@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+gem 'clearance', '~> 1.15.1'
+gem 'bcrypt', :require => 'bcrypt'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")

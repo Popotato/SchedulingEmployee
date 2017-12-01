@@ -1,4 +1,4 @@
-<header style="padding-top: 10em;">
+<header style="padding-top: 8em;">
   <div id="banner">
     <div id="banner-content">
       <div id="logo">
@@ -7,10 +7,11 @@
     </div>
   </div>
 </header>
-<table>
+<h1>Your form is completed!</h1>
+<table align="center">
   <thead>
     <tr class="rows">
-      <p id="notice"><%= notice %></p>
+      <p id="notice" align="center"><%= notice %></p>
     </tr>
     <tr class="rows">
       <th>
@@ -71,19 +72,13 @@
     <tr class="rows">
       <th>
         <p>
-          <strong>Password:</strong>       
-        </p>
-        <td><strong><%= @employee.password %></strong></td>
-      </th>
-    </tr>
-    <tr class="rows">
-      <th>
-        <p>
           <strong>Phone Number:</strong>
         </p>
         <td><strong><%= @employee.phonenumber %></strong></td>
       </th>
     </tr>
 </table>
-<%= link_to 'Edit', edit_employee_path(@employee) %> |
-<%= link_to 'Back', employees_path %>
+<div id="edit_back">
+  <%= link_to 'Edit', edit_employee_path(@employee), :style => 'color: white;' %> |
+  <%= link_to 'Back', employees_path, :style => 'color: white;' %>
+</div>

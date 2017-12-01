@@ -8,8 +8,7 @@
   </div>
 </header>
 <h1>Fill the availability</h1>
-
-<%= form_with(model: availability, local: true) do |form| %>
+  <%= form_with(model: availability, local: true) do |form| %>
   <% if availability.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(availability.errors.count, "error") %> prohibited this availability from being saved:</h2>
@@ -21,7 +20,7 @@
       </ul>
     </div>
   <% end %>
-
+<div align="center">
   <div class="field">
     <%= form.label :name, 'Enter your ID' %>
     <%= form.text_field :employee_id, id: :availability_employee_id %>
@@ -40,4 +39,5 @@
   <div class="actions">
     <%= form.submit %>
   </div>
+</div>
 <% end %>
