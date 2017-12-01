@@ -44,6 +44,7 @@
         <td class="rows"><%= link_to 'View', employee %></td>
         <td class="rows"><%= link_to 'Edit', edit_employee_path(employee) %></td>
         <td class="rows"><%= link_to 'Delete', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
       </tr>
     <% end %>
   </tbody>
@@ -52,4 +53,8 @@
 <br>
 <div id="newemployee">
   <%= link_to 'New Employee', new_employee_path, :style=>'color: white;' %>
+</div>
+
+<div id="availabilitybutton">
+  <%= link_to 'Availability', availabilities_path, :style=>'color: white;' %>
 </div>
