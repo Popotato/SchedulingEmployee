@@ -4,16 +4,29 @@
       <h2>
         <%= pluralize(employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
 
+        <div style="margin-top: 10px" id="banner">
+          <div id="banner-content">
+            <div id="logo">
+              <%= image_tag "logo.png", size: "100x100" %>
+            </div>
+          </div>
+        </div>
+
       <ul>
         <% employee.errors.full_messages.each do |message| %>
           <li>
             <%= message %>
           </li>
+
           <% end %>
       </ul>
+
     </div>
+
     <% end %>
+
       <div class="container" style="padding-top: 30px">
+        
         <form>
           <div class="form-horizontal">
             <div class="form-group">

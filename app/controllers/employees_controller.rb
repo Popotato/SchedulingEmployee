@@ -4,7 +4,9 @@ class EmployeesController < ApplicationController
   # GET /employees
   # GET /employees.json
   def index
-    @employees = Employee.where(["firstname LIKE ?", "%#{params[:search]}%"])
+    @employees = Employee.where(["firstname LIKE ?", "%#{params[:search]}%"]).
+              or(Employee.where(["lastname LIKE ?", "%#{params[:search]}%"])).
+              or(Employee.where(["email LIKE ?", "%#{params[:search]}%"]))
   end
 
   # GET /employees/1
