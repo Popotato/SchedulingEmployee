@@ -3,6 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 h1{
 	text-align: center;
+	font-family: Lato, sans-serif; 
+	padding-bottom: 20px;
 }
 
 #search {
@@ -33,3 +35,19 @@ h1{
     width: 100%; 
     margin: 0 auto; 
 }
+
+#newemployee {
+    background-color: rgb(236, 27, 46);
+    color: white;
+    border-radius: 38px;
+    margin-left: 69%;
+    padding: 2px 38px;
+    font-color: white;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#createemployee{
+	text-align: right;
+}
+

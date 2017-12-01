@@ -1,49 +1,89 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>First Name:</strong>
-  <%= @employee.firstname %>
-</p>
-
-<p>
-  <strong>Last Name:</strong>
-  <%= @employee.lastname %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @employee.email %>
-</p>
-
-<p>
-  <strong>Address:</strong>
-  <%= @employee.address %>
-</p>
-
-<p>
-  <strong>Country:</strong>
-  <%= @employee.country %>
-</p>
-
-<p>
-  <strong>City:</strong>
-  <%= @employee.city %>
-</p>
-
-<p>
-  <strong>Postal Code:</strong>
-  <%= @employee.postalcode %>
-</p>
-
-<p>
-  <strong>Password:</strong>
-  <%= @employee.password %>
-</p>
-
-<p>
-  <strong>Phone Number:</strong>
-  <%= @employee.phonenumber %>
-</p>
-
+<header style="padding-top: 10em;">
+  <div id="banner">
+    <div id="banner-content">
+      <div id="logo">
+        <%= image_tag "logo.png", size: "100x100" %>    
+      </div>
+    </div>
+  </div>
+</header>
+<table>
+  <thead>
+    <tr class="rows">
+      <p id="notice"><%= notice %></p>
+    </tr>
+    <tr class="rows">
+      <th>
+        <p>
+          <strong>First Name:</strong>
+        </p>
+        <td><strong><%= @employee.firstname %></strong></td>
+      </th>
+    </tr>
+    <tr class="rows">
+      <th>
+        <p>
+          <strong>Last Name:</strong>
+        </p>
+        <td><strong><%= @employee.lastname %></strong></td>
+      </th>
+    </tr>
+    <tr class="rows">
+      <th>
+        <p>
+          <strong>Email:</strong>
+        </p>
+        <td><strong><%= @employee.email %></strong></td>
+      </th>
+    </tr>
+    <tr class="rows">
+      <th>
+        <p>
+          <strong>Address:</strong>
+        </p>
+        <td><strong><%= @employee.address %></strong></td>
+      </th>
+    </tr>
+    <tr class="rows">
+      <th>
+        <p>
+          <strong>Country:</strong>
+        </p>
+        <td><strong><%= @employee.country %></strong></td>
+      </th>
+    </tr>
+    <tr class="rows">
+      <th>
+        <p>
+          <strong>City:</strong>
+        </p>
+        <td><strong><%= @employee.city %></strong></td>
+      </th>
+    </tr>
+    <tr class="rows">
+      <th>
+        <p>
+          <strong>Postal Code:</strong>
+        </p>
+        <td><strong><%= @employee.postalcode %></strong></td>
+      </th>
+    </tr>
+    <tr class="rows">
+      <th>
+        <p>
+          <strong>Password:</strong>       
+        </p>
+        <td><strong><%= @employee.password %></strong></td>
+      </th>
+    </tr>
+    <tr class="rows">
+      <th>
+        <p>
+          <strong>Phone Number:</strong>
+        </p>
+        <td><strong><%= @employee.phonenumber %></strong></td>
+      </th>
+    </tr>
+</table>
 <%= link_to 'Edit', edit_employee_path(@employee) %> |
 <%= link_to 'Back', employees_path %>

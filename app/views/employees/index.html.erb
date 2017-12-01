@@ -1,10 +1,13 @@
 <p id="notice"><%= notice %></p>
+<<<<<<< HEAD
 <!---
  <link href="./bootstrap_files/bootstrap.min.css" rel="stylesheet">
   <link href="./bootstrap_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
   <link href="./bootstrap_files/navbar-fixed-top.css" rel="stylesheet">
   <script src="./bootstrap_files/ie-emulation-modes-warning.js"></script>
 -->
+=======
+>>>>>>> bbc27e1f8d0bc2a469197453eba593aac57560b7
 <div id="banner">
   <div id="banner-content">
     <div id="logo">
@@ -12,7 +15,7 @@
     </div>
   </div>
 </div>
-<h1 style="padding-top: 4em;">Employees</h1>
+<h1 style="padding-top: 3em;">Employees</h1>
 
 <div id="search">
 <%= form_tag employees_path, :method => 'get' do %>
@@ -31,9 +34,8 @@
       <th class="rows">Country</th>
       <th class="rows">City</th>
       <th class="rows">Postal Code</th>
-      <th class="rows">Password</th>
       <th class="rows">Phone Number</th>
-      <th colspan="3" class="rows"></th>
+      <th colspan="3" class="rows">Buttons</th>
     </tr>
   </thead>
 
@@ -47,7 +49,6 @@
         <td class="rows"><%= employee.country %></td>
         <td class="rows"><%= employee.city %></td>
         <td class="rows"><%= employee.postalcode %></td>
-        <td class="rows"><%= employee.password %></td>
         <td class="rows"><%= employee.phonenumber %></td>
         <td class="rows"><%= link_to 'View', employee %></td>
         <td class="rows"><%= link_to 'Edit', edit_employee_path(employee) %></td>
@@ -58,6 +59,6 @@
 </table>
 
 <br>
-<div style="margin-left: 69%">
-<%= link_to 'New Employee', new_employee_path %>
+<div id="newemployee">
+  <%= link_to 'New Employee', new_employee_path, :style=>'color: white;' %>
 </div>

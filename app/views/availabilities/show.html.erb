@@ -1,19 +1,44 @@
+<header style="padding-top: 8em;">
+  <div id="banner">
+    <div id="banner-content">
+      <div id="logo">
+        <%= image_tag "logo.png", size: "100x100" %>    
+      </div>
+    </div>
+  </div>
+</header>
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Employee:</strong>
-  <%= link_to @availability.employee.firstname + " " + @availability.employee.lastname, @availability.employee %>
-</p>
-
-<p>
-  <strong>Starttime:</strong>
-  <%= @availability.starttime %>
-</p>
-
-<p>
-  <strong>Endtime:</strong>
-  <%= @availability.endtime %>
-</p>
+<table>
+	<thead>
+		<tr>
+			<td>
+				<p>
+				  <strong>Employee:</strong>
+				<td><%= link_to @availability.employee.firstname + " " + @availability.employee.lastname, @availability.employee %>
+				</td>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+	  				<strong>Starttime:</strong>
+	  				<td><%= @availability.starttime %></td>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+	  				<strong>Endtime:</strong>
+	 			 	<td><%= @availability.endtime %></td>
+				</p>
+			</td>
+		</tr>
+	</thead>
+</table>
 
 <%= link_to 'Edit', edit_availability_path(@availability) %> |
 <%= link_to 'Back', availabilities_path %>

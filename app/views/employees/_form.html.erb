@@ -1,3 +1,13 @@
+<header style="padding-top: 2em;">
+  <div id="banner">
+    <div id="banner-content">
+      <div id="logo">
+        <%= image_tag "logo.png", size: "100x100" %>    
+      </div>
+    </div>
+  </div>
+</header>
+<h1>Fill the form</h1>
 <%= form_with(model: employee, local: true) do |form| %>
   <% if employee.errors.any? %>
     <div id="error_explanation">
@@ -31,7 +41,7 @@
           <div class="form-horizontal">
             <div class="form-group">
               <div class="field">
-                <%= form.label :firstname %>
+                <%= form.label :name, 'First name' %>
 
                   <%= form.text_field :firstname, id: :employee_firstname, :class => 'form-control' %>
 
@@ -39,7 +49,7 @@
             </div>
             <div class="form-group">
               <div class="field">
-                <%= form.label :lastname %>
+                <%= form.label :name, 'Last name' %>
 
                   <%= form.text_field :lastname, id: :employee_lastname, :class => 'form-control' %>
 
@@ -78,7 +88,7 @@
             </div>
             <div class="form-group">
               <div class="field">
-                <%= form.label :postalcode %>
+                <%= form.label :name, 'Postal Code' %>
 
                   <%= form.text_field :postalcode, id: :employee_postalcode, :class => 'form-control' %>
 
@@ -86,24 +96,20 @@
             </div>
             <div class="form-group">
               <div class="field">
-                <%= form.label :password %>
-
-                  <%= form.text_field :password, id: :employee_password, :class => 'form-control' %>
-
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="field">
-                <%= form.label :phonenumber %>
+                <%= form.label :name, 'Phone Number' %>
 
                   <%= form.text_field :phonenumber, id: :employee_phonenumber, :class => 'form-control' %>
 
               </div>
             </div>
-            <div class="actions">
+            <div class="actions" id="createemployee">
               <%= form.submit %>
             </div>
           </div>
         </form>
       </div>
+<<<<<<< HEAD
       <% end %>
+=======
+    <% end %>
+>>>>>>> bbc27e1f8d0bc2a469197453eba593aac57560b7
