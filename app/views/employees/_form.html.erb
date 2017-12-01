@@ -1,3 +1,13 @@
+<header style="padding-top: 2em;">
+  <div id="banner">
+    <div id="banner-content">
+      <div id="logo">
+        <%= image_tag "logo.png", size: "100x100" %>    
+      </div>
+    </div>
+  </div>
+</header>
+<h1>Fill the form</h1>
 <%= form_with(model: employee, local: true) do |form| %>
   <% if employee.errors.any? %>
     <div id="error_explanation">
@@ -87,10 +97,10 @@
 
               </div>
             </div>
-            <div class="actions">
+            <div class="actions" id="createemployee">
               <%= form.submit %>
             </div>
           </div>
         </form>
       </div>
-      <% end %>
+    <% end %>
