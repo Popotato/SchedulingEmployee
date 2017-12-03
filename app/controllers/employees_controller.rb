@@ -1,4 +1,8 @@
 class EmployeesController < ApplicationController
+before_action :require_login
+
+  def show
+  end
   before_action :set_employee, only: [:show, :edit, :update, :destroy]
 
   # GET /employees

@@ -1,4 +1,9 @@
 class AvailabilitiesController < ApplicationController
+  before_action :require_login
+
+  def show
+  end
+  
   before_action :set_availability, only: [:show, :edit, :update, :destroy]
 
   # GET /availabilities
