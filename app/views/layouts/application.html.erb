@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Scheduleemployee</title>
+    <title>Jake's Café</title>
+    <%= favicon_link_tag 'logo.png' %>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -18,7 +19,7 @@
       <% flash.each do |key, value| %>
         <div class="flash <%= key %>"><%= value %></div>
       <% end %>
-    <%= yield %>
+      <%= yield %>
     </div>
   </body>
 </html>
