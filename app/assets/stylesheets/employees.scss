@@ -1,3 +1,111 @@
 // Place all the styles related to the Employees controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1{
+	text-align: center;
+	font-family: Lato, sans-serif; 
+	padding-bottom: 20px;
+}
+
+#search {
+	margin-left: 35%;
+	margin-bottom: 5px;
+}
+
+.rows{
+	padding: 8px;
+	text-align: center;
+}
+
+.employeetable {
+	border-collapse: collapse;
+	margin-top: 10em;
+}
+
+.employeetable, th, td {
+	border: 1px solid black;
+}
+
+#banner { 
+    background-color: rgb(236, 27, 46); 
+    width: 100%;
+    text-align: left
+}
+
+#banner-content { 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+#newemployee {
+    background-color: rgb(236, 27, 46);
+    border-radius: 38px;
+    margin-left: 69%;
+    padding: 2px 38px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#edit_back{
+    background-color: rgb(236, 27, 46);
+    border-radius: 38px;
+    margin-left: 44%;
+    padding: 2px 38px;
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#availabilitybutton {
+    background-color: rgb(236, 27, 46);
+    border-radius: 38px;
+    margin-left: 70%;
+    padding: 2px 38px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#new_employee{
+    background-color: rgb(236, 27, 46);
+    border-radius: 38px;
+    margin-bottom: 3em;
+    padding: 2px 38px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#view_employee{
+    background-color: rgb(236, 27, 46);
+    border-radius: 38px;
+    padding: 2px 38px;
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+#new_availability{
+    background-color: rgb(236, 27, 46);
+    border-radius: 38px;
+    margin-bottom: 3em;
+    padding: 2px 38px;
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#createemployee{
+	text-align: right;
+}
+
+#signed_in{
+    float: right;
+    position: relative;
+}
+
+#flash{
+    text-align: center;
+    padding-top: 6px; 
+}

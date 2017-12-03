@@ -1,62 +1,98 @@
+<header style="padding-top: 2em;">
+  <div id="banner">
+    <div id="banner-content">
+      <div id="logo">
+        <%= image_tag "logo.png", size: "100x100" %>    
+      </div>
+    </div>
+  </div>
+</header>
+<h1>Fill the form</h1>
 <%= form_with(model: employee, local: true) do |form| %>
   <% if employee.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
+      <h2>
+        <%= pluralize(employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
 
       <ul>
-      <% employee.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% employee.errors.full_messages.each do |message| %>
+          <li>
+            <%= message %>
+          </li>
+          <% end %>
       </ul>
     </div>
-  <% end %>
+    <% end %>
+      <div class="container" style="padding-top: 30px">
+        <form>
+          <div class="form-horizontal">
+            <div class="form-group">
+              <div class="field">
+                <%= form.label :name, 'First name' %>
 
-  <div class="field">
-    <%= form.label :firstname %>
-    <%= form.text_field :firstname, id: :employee_firstname %>
-  </div>
+                  <%= form.text_field :firstname, id: :employee_firstname, :class => 'form-control' %>
 
-  <div class="field">
-    <%= form.label :lastname %>
-    <%= form.text_field :lastname, id: :employee_lastname %>
-  </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="field">
+                <%= form.label :name, 'Last name' %>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email, id: :employee_email %>
-  </div>
+                  <%= form.text_field :lastname, id: :employee_lastname, :class => 'form-control' %>
 
-  <div class="field">
-    <%= form.label :address %>
-    <%= form.text_field :address, id: :employee_address %>
-  </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="field">
+                <%= form.label :email %>
+                  <%= form.text_field :email, id: :employee_email, :class => 'form-control' %>
+              </div>
+            </div>
 
-  <div class="field">
-    <%= form.label :country %>
-    <%= form.text_field :country, id: :employee_country %>
-  </div>
+            <div class="form-group">
+              <div class="field">
+                <%= form.label :address %>
 
-  <div class="field">
-    <%= form.label :city %>
-    <%= form.text_field :city, id: :employee_city %>
-  </div>
+                  <%= form.text_field :address, id: :employee_address, :class => 'form-control' %>
 
-  <div class="field">
-    <%= form.label :postalcode %>
-    <%= form.text_field :postalcode, id: :employee_postalcode %>
-  </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="field">
+                <%= form.label :country %>
 
-  <div class="field">
-    <%= form.label :password %>
-    <%= form.text_field :password, id: :employee_password %>
-  </div>
+                  <%= form.text_field :country, id: :employee_country, :class => 'form-control' %>
 
-  <div class="field">
-    <%= form.label :phonenumber %>
-    <%= form.text_field :phonenumber, id: :employee_phonenumber %>
-  </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="field">
+                <%= form.label :city %>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+                  <%= form.text_field :city, id: :employee_city, :class => 'form-control' %>
+
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="field">
+                <%= form.label :name, 'Postal Code' %>
+
+                  <%= form.text_field :postalcode, id: :employee_postalcode, :class => 'form-control' %>
+
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="field">
+                <%= form.label :name, 'Phone Number' %>
+
+                  <%= form.text_field :phonenumber, id: :employee_phonenumber, :class => 'form-control' %>
+
+              </div>
+            </div>
+            <div class="actions" id="createemployee">
+              <%= form.submit %>
+            </div>
+          </div>
+        </form>
+      </div>
+    <% end %>
