@@ -29,6 +29,7 @@ h1{
 #banner { 
     background-color: rgb(236, 27, 46); 
     width: 100%;
+    text-align: left
 }
 
 #banner-content { 
@@ -68,7 +69,6 @@ h1{
 #new_employee{
     background-color: rgb(236, 27, 46);
     border-radius: 38px;
-    margin-left: 43.5%;.
     margin-bottom: 3em;
     padding: 2px 38px;
     margin-top: 10px;
@@ -79,7 +79,6 @@ h1{
 #view_employee{
     background-color: rgb(236, 27, 46);
     border-radius: 38px;
-    margin-left: 41.3%;
     padding: 2px 38px;
     margin-top: 15px;
     display: inline-block;
@@ -90,7 +89,6 @@ h1{
 #new_availability{
     background-color: rgb(236, 27, 46);
     border-radius: 38px;
-    margin-left: 41.5%;
     margin-bottom: 3em;
     padding: 2px 38px;
     margin-top: 15px;
@@ -107,3 +105,7 @@ h1{
     position: relative;
 }
 
+#flash{
+    text-align: center;
+    padding-top: 6px; 
+}
